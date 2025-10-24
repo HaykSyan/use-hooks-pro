@@ -6,7 +6,7 @@ import { useEffect } from "react";
  * @param {() => void} callback - The callback to call when an outside click is detected
  */
 export default function useOutsideClick(
-  ref: React.RefObject<HTMLElement>,
+  ref: React.RefObject<HTMLElement | null>,
   callback: () => void
 ) {
   useEffect(() => {
